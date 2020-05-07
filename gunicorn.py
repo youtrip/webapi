@@ -16,9 +16,15 @@ loglevel = 'debug'
 bind = '0.0.0.0:8800'
 pidfile = 'log/gunicorn.pid'
 logfile = 'log/debug.log'
+accesslog = 'log/gun_access.log'
+access_log_format = '%(h)s %(t)s %(U)s %(q)s'
+errorlog = 'log/gun_error.log'
+timeout = 60*60*10
 
+daemon = True
 #启动的进程数
 workers = multiprocessing.cpu_count() * 2 + 1
-worker_class = 'gunicorn.workers.ggevent.GeventWorker'
+# worker_class = 'gunicorn.workers.ggevent.GeventWorker'
+worker_class = "gevent"
 
 x_forwarded_for_header = 'X-FORWARDED-FOR'

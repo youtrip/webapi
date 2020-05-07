@@ -1,5 +1,6 @@
 pyjwt==1.7.1
 requests
 flask
+wheel
 gunicorn
 gevent

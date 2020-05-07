@@ -19,7 +19,7 @@ logfile = 'log/debug.log'
 accesslog = 'log/gun_access.log'
 access_log_format = '%(h)s %(t)s %(U)s %(q)s'
 errorlog = 'log/gun_error.log'
-timeout = 60*60*5
+timeout = 60*60*6
 
 daemon = True
 #启动的进程数

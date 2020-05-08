@@ -91,8 +91,8 @@ def post():
 
 @app.route('/get', methods=['GET'])
 def get():
-    url = 'https://%s/landlord/players/self' % hostname
-    return json.loads(getApi(url))
+    url = 'https://%s/landlord/marketplace' % hostname
+    return getApi(url)
 
 
 @app.route('/login', methods=['GET'])

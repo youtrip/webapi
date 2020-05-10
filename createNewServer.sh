@@ -7,6 +7,8 @@ sudo apt upgrade
 sudo apt install -y python3-dev python3-pip python-gevent python3-venv nethogs nginx
 cd webapi
 python3 -m venv venv
+source venv/bin/activate
+sudo apt install python-gevent
 pip install -r requirements.txt
 gunicorn -D -c gunicorn.py api:app
 # 获取Gunicorn进程树
@@ -14,5 +16,4 @@ gunicorn -D -c gunicorn.py api:app
 
 # 重启Gunicorn任务,例如进程号是30080
 # kill -HUP 30080
-
-# http://XXX:8800/post?ll=54.51492117546928,-5.889513013116261
+#site = 'http://w1.mianfei.ml:8800/post?ll=54.51492117546928,-5.889513013116261'

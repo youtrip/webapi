@@ -105,4 +105,4 @@ def login():
     return make_response('Could not verify!', 401, {'WWW-Authenticate': 'Basic realm="login Required"'})
 
 if __name__== '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=8800,host='0.0.0.0')

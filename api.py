@@ -19,11 +19,11 @@ app = Flask(__name__)
 app.config['API_SECRET_KEY'] = 'dnottellanybody!'
 
 hostname = 'api.reality.co'
-
+userkey = 'MjJfNF92d19RSnNzUklRbzdxakctYTZUaWFXUzBIWExhQ0JILXQzV1dLWVNDNFRWanFBOGdrdXJEOVE1MHJzMEQ5ZnpQN1huOGxMYUw1emRZWjJHaTBXU3A3QmtBVXg1ZHltNjkweExBU3dnYkk6Om80OE1iMVU0WXdmcC0tNjRoN1UzWEZBZFY0ZGM='
 headers = {
             'Host': hostname,
             'User-Agent': 'Landlord 2/2.20.2 (com.landlordTycoonEdition.www; build:207; iOS 12.4.5) Alamofire/4.9.1',
-            'x-fs-token': 'AYUPT0GZOXDCTPPAGGTRYWALLU4XFVV1DBJZSNVDEIAIVLQI',
+            'x-fs-token': userkey,
             'api-version': '2',
             'Accept': '*/*',
             'Accept-Language': 'zh-CN',
